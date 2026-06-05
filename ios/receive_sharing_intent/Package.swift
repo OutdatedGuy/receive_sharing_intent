@@ -11,15 +11,11 @@ let package = Package(
     products: [
         .library(name: "receive-sharing-intent", targets: ["receive_sharing_intent"])
     ],
-    dependencies: [
-        .package(name: "FlutterFramework", path: "../FlutterFramework")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "receive_sharing_intent",
-            dependencies: [
-                .product(name: "FlutterFramework", package: "FlutterFramework")
-            ],
+            dependencies: [],
             resources: [
                 .process("PrivacyInfo.xcprivacy"),
             ]
